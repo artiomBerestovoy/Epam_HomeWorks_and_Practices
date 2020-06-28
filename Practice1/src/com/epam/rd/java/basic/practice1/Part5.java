@@ -1,4 +1,4 @@
-package ua.nure.berestovoy.practice1;
+package com.epam.rd.java.basic.practice1;
 
 public class Part5 {
 

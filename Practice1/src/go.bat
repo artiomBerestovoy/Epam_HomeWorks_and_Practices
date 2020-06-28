@@ -1,6 +1,6 @@
 @ECHO OFF
 
-javac ua/nure/berestovoy/practice1/Part1.java
-java ua.nure.berestovoy.practice1.Part1
+javac com\epam\rd\java\basic\practice1\Part1.java
+java com.epam.rd.java.basic.practice1.Part1
 
 PAUSE

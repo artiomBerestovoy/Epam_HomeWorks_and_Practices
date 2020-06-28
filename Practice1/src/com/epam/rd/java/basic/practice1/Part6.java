@@ -1,10 +1,16 @@
-package ua.nure.berestovoy.practice1;
+package com.epam.rd.java.basic.practice1;
 
 public class Part6 {
 
     public static void main(String[] args) {
+    	if (args.length == 0) {
+    		System.out.print("");
+    		System.exit(0);
+    	}
+    	
         int[] numbArray = new int[Integer.parseInt(args[0])];
         int j = 0;
+        
         for (int i = 2; j < numbArray.length; i++) {
             boolean isPrime = true;
             int count = 0;
@@ -28,16 +34,15 @@ public class Part6 {
     }
     
     public static void print(int [] list) {
-    	
+    	StringBuilder sb = new StringBuilder();
+
         for (int i = 0; i < list.length; i++) {
-            System.out.print(list[i]);
-            
-            if (i < (list.length - 1)) {
-                System.out.print(" ");
+            sb.append(list[i]);
+            sb.append(' ');
             }
-            
-        }
-        System.out.println();
+
+        sb.deleteCharAt(sb.length() - 1);
+        System.out.print(sb.toString());
     }
 
 }
